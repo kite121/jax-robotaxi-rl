@@ -1,0 +1,37 @@
+{
+  "seed": 0,
+  "map_ids": [
+    0,
+    1,
+    2
+  ],
+  "reference_clearance_weight": 1.0,
+  "max_steps": 3600,
+  "path_length": 100,
+  "output_dir": "results/training",
+  "hidden_sizes": [
+    128,
+    128
+  ],
+  "initial_log_std": -3.5,
+  "warm_start_steps": 1500,
+  "warm_start_rounds": 1,
+  "warm_start_speed": 2.5,
+  "warm_start_horizon": 1.5,
+  "num_envs": 16,
+  "rollout_steps": 256,
+  "action_repeat": 4,
+  "total_timesteps": 786432,
+  "minibatch_size": 256,
+  "update_epochs": 4,
+  "learning_rate": 3e-05,
+  "critic_learning_rate": 0.0003,
+  "gamma": 0.999,
+  "gae_lambda": 0.95,
+  "clip_epsilon": 0.2,
+  "value_coef": 0.5,
+  "entropy_coef": 0.0,
+  "max_grad_norm": 0.5,
+  "eval_every_updates": 4,
+  "eval_episodes": 1
+}
